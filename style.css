@@ -70,7 +70,7 @@ body p, body pre
     border: none;
     font-size: 15px;
     text-align: center;
-    background-color: #00ac9f;
+    background-color: #015DE5;
     color: white;
 }
 
@@ -741,7 +741,7 @@ body .sm-clean a:hover, body .main-menu.sm-clean .sub-menu li a:hover, body .sm-
     position: relative;
     margin-bottom: 25px;
 }
-.contact-form input[type=submit]
+.contact-form input[type=button]
 {
     display: block;
     border: 1px solid;
@@ -1240,6 +1240,10 @@ footer ul
     .service-img img{
         margin-left: 0;
     }
+    .portrait img{
+        margin-left: 57px;
+    }
+
 }
 
 @media screen and (max-width: 650px) {          
