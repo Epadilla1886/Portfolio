@@ -107,6 +107,11 @@ jQuery(document).on('ready', function () {
     //Show-Hide header sidebar
     jQuery('#toggle').on('click', multiClickFunctionStop);
 
+    //Include event handler to submit form
+    $('.contact-submit-holder button').on('click', function(){
+        SendMail();
+    });
+
 });
 
 
@@ -431,7 +436,7 @@ var SendMail = function () {
         };
         jQuery.ajax({
             type: "POST",
-            url: "php/sendMail.php",
+            url: "php/mail_handler.php",
             data: params,
             success: function (response) {
                 if (response) {
@@ -463,7 +468,7 @@ var SendMail = function () {
                         error = "Server is currently unavailable!";
                         break;
                     default:
-                        error = "Unespected error, please try again later.";
+                        error = "Unexpected error, please try again later.";
                 }
                 if (error) {
                     alert(error);
