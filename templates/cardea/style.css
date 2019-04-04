@@ -1,3 +1,23 @@
+/*------------------------------------------------------------------
+[Table of contents]
+1. Global CSS
+          1.1 Global Header Logo/Menu CSS
+          1.2. Global Section CSS
+2. Home Section CSS
+3. Services Section CSS
+4. Portfolio Section CSS
+5. About Section CSS
+6. News Section CSS
+7. Pricing Section CSS
+8. Skills Section CSS
+9. Team Section CSS
+10. Contact Section CSS
+11. Milestones Section CSS
+12. Footer CSS
+13. Responsive CSS
+-------------------------------------------------------------------*/
+
+
 @import url("css/clear.css");
 @import url("css/font-awesome.min.css");
 @import url("css/sm-clean.css");
@@ -8,13 +28,15 @@
 @import url("css/common.css");
 
 
+
+
 /* ===================================
-    Global CSS
+    1. Global CSS
 ====================================== */
 body
 {
     font-family: 'Poppins', sans-serif;
-    font-size: 15px;
+    font-size: 13px;
     line-height: 27px;
     font-weight: 400;
     color: #fff;
@@ -25,13 +47,13 @@ body
 body a
 {
     text-decoration: none;
-    color: #00f0ff ;
+    color: #ff1e5c;
     transition: color .2s ease;
 }
 
 body a:hover
 {
-    color: #00f0ff;
+    color: #ff1e5c; 
 }
 
 body p, body pre
@@ -45,33 +67,6 @@ body p, body pre
     max-height: 100%;
     width: auto;
     height: auto;
-    margin-left: 84px;
-}
-
-.resume-btn{
-    text-align: center;
-}
-
-.button {
-    display: inline-block;
-    margin: 0.3em;
-    padding: 1.2em 5em;
-    overflow: hidden;
-    position: relative;
-    text-decoration: none;
-    text-transform: uppercase;
-    border-radius: 3px;
-    -webkit-transition: 0.3s;
-    -moz-transition: 0.3s;
-    -ms-transition: 0.3s;
-    -o-transition: 0.3s;
-    transition: 0.3s;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.5);
-    border: none;
-    font-size: 15px;
-    text-align: center;
-    background-color: #00ac9f;
-    color: white;
 }
 
 .doc-loader 
@@ -123,7 +118,7 @@ body p, body pre
 
 
 /* ===================================
-    Global Header Logo/Menu CSS
+    1.1 Global Header Logo/Menu CSS
 ====================================== */
 
 .header-holder
@@ -226,7 +221,7 @@ body p, body pre
     padding-right: 35px !important;
 }
 
-body .site-wrapper .sm-clean a
+body .site-wrapper .sm-clean a 
 {
     cursor: pointer;
     color: #ffffff;
@@ -263,34 +258,10 @@ body .site-wrapper .sm-clean a
     padding: 15px 0;
 }
 
-/*top links*/
-
-body .sm-clean li.active a.about-link
-{
-    color: #2F83FF;
-}
-
-body .sm-clean li.active a.skills-link
- {
-     color: #FF4646;
- }
-
-body .sm-clean li.active a.project-link
-{
-    color: #D46089;
-}
-
-body .sm-clean li.active a.contact-link
-{
-    color: #00B362;
-}
-
 body .sm-clean a:hover, body .main-menu.sm-clean .sub-menu li a:hover, body .sm-clean li.active a, body .sm-clean li.current-page-ancestor > a, body .sm-clean li.current_page_ancestor > a, body .sm-clean li.current_page_item > a
 {
-    color: #00f0ff;
+    color: #ff1e5c !important;
 }
-
-
 
 .sm-clean li 
 {
@@ -350,7 +321,7 @@ body .sm-clean a:hover, body .main-menu.sm-clean .sub-menu li a:hover, body .sm-
 
 
 /* ===================================
-    Global Section CSS
+    1.2. Global Section CSS
 ====================================== */
 
 .section 
@@ -374,13 +345,6 @@ body .sm-clean a:hover, body .main-menu.sm-clean .sub-menu li a:hover, body .sm-
 {
     background-color: #fff;
     padding: 75px;    
-}
-
-.info-text
-{
-    font-size: 20px;
-    line-height: 30px;
-    margin-bottom: 20px;
 }
 
 .sticky-spacer 
@@ -439,7 +403,7 @@ body .sm-clean a:hover, body .main-menu.sm-clean .sub-menu li a:hover, body .sm-
 {
     text-align: left;
     padding-top: 0;
-    font-size: 66px;
+    font-size: 80px;
 }
 
 .section .page-desc
@@ -480,7 +444,8 @@ body .sm-clean a:hover, body .main-menu.sm-clean .sub-menu li a:hover, body .sm-
     float: none !important;
 }
 
-.bg-holder.float-left .split-color {
+.bg-holder.float-left .split-color 
+{
     position: absolute;
     top: 0;
     transform: translateX(-104%);
@@ -490,6 +455,312 @@ body .sm-clean a:hover, body .main-menu.sm-clean .sub-menu li a:hover, body .sm-
     height: 100%;
 }
 
+.bg-holder.float-right .split-color 
+{
+    position: absolute;
+    top: 0;
+    transform: translateX(100%);
+    right: 360px;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #d41e5c;
+}
+
+
+
+/* ===================================
+    2. Home Section CSS
+====================================== */
+
+#home
+{
+    background-color: #111111;
+}
+
+.big-text
+{    
+    font-size: 44px;
+    line-height: 60px;
+    font-weight: 700;
+}
+
+
+/* ===================================
+    3. Services Section CSS
+====================================== */
+
+#services
+{
+    background-color: #111111;
+}
+
+#services .split-color
+{
+    background-color: #d41e5b;
+}
+
+.service-holder
+{
+    margin: 25px 0;
+}
+
+.service-holder:after
+{
+    content: "";
+    display: block;
+    clear: both;    
+}
+
+.service-img
+{
+    float: left;
+    width: 30%;
+    max-width: 90px;
+}
+
+.service-txt
+{
+    float: left;
+    margin-left: 25px;
+    text-align: left;
+    line-height: 25px;
+    width: calc(70% - 25px);
+}
+
+.service-txt h4
+{
+    font-size: 19px;
+    padding-bottom: 10px;
+    padding-top: 0;
+    color: #fff;
+    font-weight: 600;
+}
+
+
+
+/* ===================================
+    4. Portfolio Section CSS
+====================================== */
+
+#portfolio
+{
+    background-color: #111111;
+}
+
+#portfolio .split-color
+{
+    background-color: #505cc1;
+}
+
+.grid 
+{
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+    max-width: 100%;
+    font-size: 0;
+    line-height: 0;
+}
+
+.grid-sizer
+{
+    width: 50%;
+}
+
+.grid-item
+{
+    float: left;
+    font-size: 0;
+    line-height: 0;
+    width: 100%;
+    overflow: hidden;
+}
+
+.grid-item.p_one_half
+{
+    width: 50%;
+}
+
+.grid-item.p_one
+{
+    width: 100%;
+}
+
+
+.grid-item img
+{
+    width: 100% !important;
+    height: auto;
+    display: block;    
+}
+
+.grid-item .entry-holder 
+{
+    text-align: center;
+    background-color: #fff;
+    padding: 50px 20px;
+}
+
+.grid-item a.item-link:after 
+{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+}
+
+.portfolio-text-holder 
+{
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: inline-block;
+    z-index: 1;
+    opacity: 0;
+    transform: translate(-50%);
+    transition: all .3s ease;
+    text-align: center;
+}
+
+.portfolio-title 
+{
+    font-size: 18px;
+    line-height: 30px;
+    margin-bottom: 0;
+    font-weight: 700;
+    color: #fff;
+}
+
+.portfolio-desc
+{
+    font-size: 14px;
+    line-height: 22px;
+    color: #fff;
+    letter-spacing: 2px;
+}
+
+.grid-item a.item-link:hover:after, .grid-item a.item-link:hover .portfolio-text-holder
+{
+    opacity: 1;
+}
+
+
+.more-posts-portfolio-holder
+{
+    min-height: 1px;
+    margin-top: -1px;
+    margin-bottom: 50px;
+}
+
+.no-padding .more-posts-portfolio-holder
+{
+    margin-bottom: 0;
+}
+
+.more-posts-portfolio-holder img 
+{
+    width: 70px !important;
+    height: 70px !important;
+}
+
+.more-posts-portfolio-holder.hide
+{
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+    cursor: default;
+}
+
+.more-posts-portfolio
+{
+    color: #fff;
+    background-color: #000000;
+    padding: 17px 6px 17px 14px;
+    display: block;
+    transition: all .3s ease;
+}
+
+.more-posts-portfolio
+{
+    cursor: pointer;   
+}
+
+.portfolio-load-content-holder {
+    opacity: 0;
+    transform: translateY(70px);
+    transition: all .5s ease;
+    width: 690px;
+    max-width: 100%;
+}
+
+.section-content-holder.float-right .portfolio-load-content-holder {
+    margin-right: 0;
+    margin-left: auto;    
+}
+
+.section-content-holder.float-left .portfolio-load-content-holder {
+    margin-right: auto;
+    margin-left: 0;    
+}
+
+.portfolio-load-content-holder.show {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.portfolio-load-content-holder.show.viceversa {
+    opacity: 0;
+    transform: translateY(70px);
+}
+
+.section.no-padding .portfolio-content-wrapper {
+    margin: 75px 0;
+}    
+
+.portfolio-content-wrapper {
+    display: none;
+}
+
+.portfolio-content-wrapper.show {
+    display: block;
+}
+
+#portfolio-grid {
+    transition: all .5s ease;
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+#portfolio-grid.hide {
+    opacity: 0;
+    transform: translateY(70px);    
+}
+
+.grid-item a.item-link.animate-plus:after, .ajax-portfolio.animate-plus .portfolio-text-holder {
+    opacity: 1;
+}
+
+.portfolio-item-wrapper
+{
+    width: 690px;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    max-width: 95%;
+}
+
+/* ===================================
+    5. About Section CSS
+====================================== */
+
 #about
 {
     background-color: #111111;
@@ -497,20 +768,256 @@ body .sm-clean a:hover, body .main-menu.sm-clean .sub-menu li a:hover, body .sm-
 
 #about .split-color
 {
-    background-color: #2F83FF;
+    background-color: #ffa83d;
 }
 
-.portrait{
-    height: 75%;
-    width: 75%;
-}
-
-.about-link li a:hover{
-    background-color: #2F83FF;
-}
 
 /* ===================================
-    Skills Section CSS
+    6. News Section CSS
+====================================== */
+
+#news
+{
+    background-color: #111111;
+}
+
+#news .split-color
+{
+    background-color: #d41e5b;
+}
+
+.blog-holder-scode
+{
+    margin-top: 0;
+}
+
+.blog-holder-scode article:nth-of-type(2n) 
+{
+    margin-right: 0;
+}
+
+.blog-item-holder-scode
+{
+    margin: 30px 0;
+    width: 45%;
+    display: inline-block;
+    margin-right: 8%;
+    vertical-align: text-top;
+}
+
+.blog-item-holder-scode .excerpt
+{
+    margin-top: 20px;
+}
+
+.blog-item-holder-scode h4 
+{
+    padding: 0;
+    max-width: 930px;
+    margin: 0 auto;
+}
+
+.blog-item-holder-scode h4 a 
+{
+    color: #fff;
+    font-size: 22px;
+    line-height: 30px;
+    font-weight: 600;
+    transition: all .2s ease;
+}
+
+.blog-item-holder-scode h4 a:hover
+{
+    color: #fff;
+    opacity: 0.5;
+}
+
+.blog-item-holder-scode .cat-links ul
+{
+    list-style: none;
+    padding: 0;    
+}
+
+.blog-item-holder-scode .cat-links ul li
+{
+    display: inline-block;
+}
+
+.blog-item-holder-scode .cat-links ul li a:after
+{
+    content: ",";    
+    padding-right: 5px;
+}
+
+.blog-item-holder-scode .cat-links ul li:last-child a:after
+{
+    display: none
+
+}
+
+.blog-item-holder-scode .cat-links ul a
+{
+    text-transform: uppercase;
+    color: #fff;
+    transition: all .2s ease;
+}
+
+.blog-item-holder-scode .cat-links ul li a:hover
+{
+    opacity: 0.5;
+}
+
+.blog-item-holder-scode .entry-date.published, .blog-item-holder-scode .cat-links
+{
+    display: inline-block;
+    font-size: 14px;    
+    margin-top: -10px;
+}
+
+.blog-item-holder-scode .entry-date.published:after
+{   
+    content: "\2022";
+    display: inline-block;
+    margin: 0 7px 0 10px;
+}
+
+.blog-holder-scode .more-posts-link
+{
+    vertical-align: text-bottom;
+    display: inline-block;
+    background: #864eff;
+    border-radius: 5px;
+    width: 255px;
+    height: 90px;
+}
+
+.blog-holder-scode .more-posts-link a 
+{
+    display: block;
+    text-align: center;
+}
+
+.blog-holder-scode .more-posts-link img
+{
+    transition: transform .3s ease;
+    width: 60px;
+    height: 60px;
+    margin-top: 15px;
+}
+
+.blog-holder-scode .more-posts-link:hover img 
+{
+    transform: translateX(10px);
+}
+
+
+/* ===================================
+    7. Pricing Section CSS
+====================================== */
+
+#pricing
+{
+    background-color: #111111;
+}
+
+#pricing .split-color
+{
+    background-color: #38a355;
+}
+
+
+.pricing-table 
+{
+    text-align: center;
+    padding-bottom: 20px;
+    overflow: hidden;
+    color: #969696;
+    background-color: #000000;
+    margin-top: 30px;
+    max-width: 330px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.pricing-table-title 
+{
+    background-color: #ff1e5c;
+    color: #fff;
+    font-size: 24px;
+    padding: 40px 0;
+    margin-bottom: 25px;
+}
+
+.pricing-table-price 
+{
+    font-size: 60px;
+    line-height: 100%;
+    color: #ffffff;
+}
+
+.pricing-table ul 
+{
+    padding: 0;
+    list-style: none;
+    margin-top: 25px;
+}
+
+.pricing-table ul li 
+{
+    padding: 10px 0;
+}
+
+.pricing-table-content-holder 
+{
+    padding: 0 10%;
+    margin-bottom: 40px;
+}
+
+.pricing-button
+{
+    display: inline-block;
+    color: #fff !important;
+    border: 2px solid;
+    text-align: left;
+    padding-bottom: 17px;
+    padding-top: 17px;
+    padding-left: 50px;
+    padding-right: 50px;
+    cursor: pointer;
+    vertical-align: middle;
+    text-decoration: none;
+    transition: all .2s linear;
+    margin-bottom: 17px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.pricing-button:hover
+{
+    opacity: 0.5;
+}
+
+
+.pricing-orange
+{
+    background-color: #de8234;
+}
+
+.pricing-blue
+{
+    background-color: #505CC1;
+}
+
+.pricing-green
+{
+    background-color: #37bd6c;
+}
+
+
+
+/* ===================================
+    8. Skills Section CSS
 ====================================== */
 
 #skills
@@ -520,9 +1027,8 @@ body .sm-clean a:hover, body .main-menu.sm-clean .sub-menu li a:hover, body .sm-
 
 #skills .split-color
 {
-    background-color: #FF4646;
+    background-color: #505cc1;
 }
-
 
 .skills-holder 
 {
@@ -582,80 +1088,228 @@ body .sm-clean a:hover, body .main-menu.sm-clean .sub-menu li a:hover, body .sm-
     line-height: 35px;
 }
 
+
+
 /* ===================================
-    Projects Section CSS
+    9. Team Section CSS
 ====================================== */
 
-#projects
+#team
 {
     background-color: #111111;
 }
 
-#projects .split-color
+#team .split-color
 {
-    background-color: #D46089;
+    background-color: #d41e5b;
 }
 
-.skills-holder
+.member-item-wrapper
+{    
+    width: 690px;    
+    margin-top: 100px;
+    margin-bottom: 50px;
+    max-width: 95%;
+}
+
+.section.no-padding .member-content-wrapper {
+    margin: 75px 0;    
+}
+
+.info-text 
+{    
+    font-size: 30px;
+    line-height: 35px;
+    margin-bottom: 40px;
+    font-weight: 100;
+}
+
+#team-holder 
 {
     position: relative;
-    margin: 40px 0;
+    margin-bottom: 50px;
 }
 
-.skill-holder
+.section.no-padding #team-holder
 {
-    margin-bottom: 30px;
+    margin-bottom: 0;
 }
 
-.skill-holder:after
+.member-holder-wrapper 
 {
-    clear: both;
-    display: block;
-    content: "";
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
-.skill-percent
+.member-holder-wrapper li.one_third:nth-child(3n), .member-holder-wrapper li.one_half:nth-child(2n), .member-holder-wrapper li.one_fourth:nth-child(4n)  
 {
-    font-size: 48px;
-    line-height: 100%;
-    font-weight: 100;
-    width: 100px;
-    display: inline-block;
-    vertical-align: text-top;
-}
-
-.skill
-{
-    width: 100%;
-    height: 3px;
-    background-color: rgba(202, 202, 202, 0.3);
-    margin-bottom: 30px;
-}
-
-.skill-text
-{
-    display: inline-block;
-    width: calc(100% - 145px);
     margin-right: 0;
-    float: right;
-    vertical-align: text-top;
 }
 
-.skill-fill
+.member-info-holder
+{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.member-name 
+{
+    font-size: 18px;
+    text-align: center;
+    font-weight: 700;
+    line-height: 30px;
+    color: #fff;
+    margin-bottom: 0;
+}
+
+.member-position 
+{
+    font-size: 14px;
+    letter-spacing: 2px;
+    text-align: center;
+    margin-left: -2px;
+    color: #fff;
+    line-height: 100%;
+}
+
+.team-load-content-holder 
+{
+    opacity: 0;
+    transform: translateY(70px);
+    transition: all .5s ease;
+    width: 690px;
+    max-width: 100%;
+}
+
+.section-content-holder.float-right .team-load-content-holder {
+    margin-right: 0;
+    margin-left: auto;    
+}
+
+.section-content-holder.float-left .team-load-content-holder {
+    margin-right: auto;
+    margin-left: 0;    
+}
+
+.team-load-content-holder.show 
+{
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.team-load-content-holder.show.viceversa 
+{
+    opacity: 0;
+    transform: translateY(70px);
+}
+
+.member-holder 
+{
+    transition: all .5s ease;
+    opacity: 1;
+    transform: translateY(0px);
+    text-align: center;
+}
+
+.member-holder.one_half
+{
+    margin: 0;
+    width: 50%;
+}
+
+.member-holder.one_third
+{
+    margin: 0;
+    width: calc(100% / 3);
+}
+
+.member-holder.one_fourth
+{
+    margin: 0;
+    width: calc(100% / 4);
+}
+
+.member-holder img.attachment-post-thumbnail
 {
     width: 100%;
-    height: 10px;
-    background-color: #fff;
+    height: 100%;
+    display: block;
 }
 
-.skill-text span
+.member-holder.hide 
 {
-    font-size: 22px;
-    line-height: 35px;
+    opacity: 0;
+    transform: translateY(70px);    
 }
+
+.member-content-wrapper 
+{
+    display: none;
+}
+
+.member-content-wrapper.show 
+{
+    display: block;
+}
+
+.close-icon
+{
+    background-image: url(images/close-left-arrow.png);
+    background-repeat: no-repeat;
+    width: 70px;
+    height: 70px;
+    display: inline-block;
+    background-color: rgba(191, 191, 191, 0.22);
+    border-radius: 5px;
+    margin-bottom: 20px;
+    background-size: 70px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.close-icon:hover 
+{
+    background-position: -5px 0;
+}
+
+.member-mask 
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+    opacity: 0;
+    transition: opacity .3s ease;
+}
+
+.member-mask:hover
+{
+    opacity: 1;
+}
+
+.member-mask.animate-plus
+{
+    opacity: 1;
+}
+
+.member-holder a.img-link 
+{
+    position: relative;
+    display: block;
+    line-height: 0;
+    font-size: 0;
+    overflow: hidden;
+}
+
 
 /* ===================================
-    Contact Section CSS
+    10. Contact Section CSS
 ====================================== */
 
 #contact
@@ -665,9 +1319,8 @@ body .sm-clean a:hover, body .main-menu.sm-clean .sub-menu li a:hover, body .sm-
 
 #contact .split-color
 {
-    background-color: #00B362;
+    background-color: #000000;
 }
-
 
 .contact-form
 {
@@ -766,8 +1419,78 @@ body .sm-clean a:hover, body .main-menu.sm-clean .sub-menu li a:hover, body .sm-
     opacity: 0.5;
 }
 
+
 /* ===================================
-    Footer CSS
+    11. Milestones Section CSS
+====================================== */
+
+#milestones
+{
+    background-color: #111111;
+}
+
+ul.milestones-holder 
+{
+    padding: 0;
+    margin: 20px 0 0 0;
+    list-style: none;
+    text-align: center;
+}
+
+li.milestone 
+{
+    display: inline-block;
+    position: relative;
+    margin: 0 50px;
+}
+
+li.milestone:before {
+    content: "/";
+    display: inline-block;
+    position: absolute;
+    right: -55px;
+    font-size: 55px;
+    top: 0;
+    line-height: 100%;
+    font-weight: 100;
+    transform: rotate(27deg);
+    color: #969696;
+}
+
+li.milestone:last-child:before
+{
+    display: none;
+}
+
+p.milestone-num {
+    font-size: 65px;
+    line-height: 100%;
+    font-weight: 700;
+    position: relative;
+    display: inline-block;
+}
+
+p.milestone-text {
+    font-size: 22px;
+    line-height: 30px;
+    color: #969696;
+    max-width: 190px;
+    margin: 0 auto;
+}
+
+p.milestone-num:before {
+    content: "";
+    position: absolute;
+    top: -15px;
+    left: 0;
+    width: 100%;
+    height: 8px;
+    background-color: #fff;
+}
+
+
+/* ===================================
+    12. Footer CSS
 ====================================== */
 
 
@@ -845,13 +1568,13 @@ footer ul
 
 .site-wrapper .footer a:hover
 {
-    color: #00f0ff;
+    color: #ff1e5c;
 }
 
 
 
 /* ===================================
-    Responsive CSS
+    15. Responsive CSS
 ====================================== */
 
 
@@ -1197,12 +1920,12 @@ footer ul
         width: 100% !important;
     }   
 
-    .info-text
+    .info-text 
     {
-        font-size: 35px;
+        font-size: 20px;
         line-height: 30px;
         margin-bottom: 20px;
-    }
+    }  
 
     .blog-item-holder-scode
     {
@@ -1237,9 +1960,7 @@ footer ul
         margin: 0 auto;
         line-height: 25px;
     }
-    .service-img img{
-        margin-left: 0;
-    }
+
 }
 
 @media screen and (max-width: 650px) {          
@@ -1293,4 +2014,3 @@ footer ul
         font-size: 20px;
     }
 }
-
