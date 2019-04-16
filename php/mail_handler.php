@@ -32,8 +32,8 @@ $options = array(
     )
 );
 $mail->smtpConnect($options);
-$mail->From = 'EJPadilla886@gmail.com';  // sender's email address (shows in "From" field)
-$mail->FromName = 'Mailer Daemon';   // sender's name (shows in "From" field)
+$mail->From = $_POST['email'];  // sender's email address (shows in "From" field)
+$mail->FromName = $_POST['name'];   // sender's name (shows in "From" field)
 $mail->addAddress('ejpadilla1886@gmail.com', 'EJ Padilla');  // Add a recipient (name is optional)
 //$mail->addAddress('ellen@example.com');                        // Add a second recipient
 $mail->addReplyTo($_POST['email']);                          // Add a reply-to address
@@ -47,11 +47,11 @@ $mail->isHTML(true);                                  // Set email format to HTM
 $mail->Subject = 'mailer message from '.$_POST['name'];
 $mail->Body    = "
     time: ".date('Y-m-d H:is:s')."<br>
-    from: {$_SERVER['REMOTE_ADDR']}<br>
-    name: {$_POST['name']}<br>
-    email: {$_POST['email']}<br>
-    subject: {$_POST['subject']}<br>
-    message: {$_POST['message']}<br>
+    from: ".$_SERVER['REMOTE_ADDR']."<br>
+    name: ".$_POST['name']."<br>
+    email: ".$_POST['email']."<br>
+    subject: ".$_POST['subject']."<br>
+    message: ".$_POST['message']."<br>
 ";
 $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
 
