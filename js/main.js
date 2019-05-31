@@ -425,7 +425,8 @@ function isValidEmailAddress(emailAddress) {
 var SendMail = function () {
 
     var emailVal = jQuery('#contact-email').val();
-
+//    var notAnEmail = jQuery('#contact-email').text('Your email is not in valid format').css('color','red');
+    
     if (isValidEmailAddress(emailVal)) {
         var params = {
             'action': 'SendMessage',
@@ -477,7 +478,8 @@ var SendMail = function () {
         });
     } else
     {
-        alert('Your email is not in valid format');
+        jQuery('#contact-email').val('');
+        jQuery('#contact-email').attr("placeholder",'Your email is not in valid format');
     }
 };
 
