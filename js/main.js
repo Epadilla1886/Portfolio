@@ -479,7 +479,8 @@ var SendMail = function () {
     } else
     {
         jQuery('#contact-email').val('');
-        jQuery('#contact-email').attr("placeholder",'Your email is not in valid format');
+        jQuery('#contact-email').attr("placeholder",'YOUR EMAIL IS NOT A VALID FORMAT');
+        setTimeout(function(){jQuery('#contact-email').val(emailVal);}, 2000);
     }
 };
 
