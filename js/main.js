@@ -444,7 +444,7 @@ var SendMail = function () {
                     var responseObj = jQuery.parseJSON(response);
                     if (responseObj.ResponseData)
                     {
-                        $('#send-btn').click(false);
+                        jQuery('#send-btn').click(false);
                         alert(responseObj.ResponseData);
                     }
                 }
