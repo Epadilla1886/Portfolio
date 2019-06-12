@@ -446,8 +446,10 @@ var SendMail = function () {
                     {
                 
                         alert(responseObj.ResponseData);
-                        alert("Email Sent!");
-//                        jQuery("#send-btn").attr("disabled", false);
+                        jQuery('#send-btn').val('');
+                        jQuery('#send-btn').attr("placeholder",'Your Email has been sent!');
+                        setTimeout(function(){jQuery('#send-btn').val("SEND");}, 2000);
+//                      jQuery("#send-btn").attr("disabled", false);
                     }
                 }
             },
