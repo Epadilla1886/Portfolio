@@ -447,7 +447,7 @@ var SendMail = function () {
                 
                         alert(responseObj.ResponseData);
                         alert("Email Sent!");
-                        jQuery("#send-btn").attr("disabled", true);
+//                        jQuery("#send-btn").attr("disabled", false);
                     }
                 }
             },
