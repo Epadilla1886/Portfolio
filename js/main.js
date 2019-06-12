@@ -423,7 +423,7 @@ function isValidEmailAddress(emailAddress) {
 }
 
 var SendMail = function () {
-
+    jQuery("#send-btn").attr("disabled", true);
     var emailVal = jQuery('#contact-email').val();
 //    var notAnEmail = jQuery('#contact-email').text('Your email is not in valid format').css('color','red');
     
@@ -444,8 +444,10 @@ var SendMail = function () {
                     var responseObj = jQuery.parseJSON(response);
                     if (responseObj.ResponseData)
                     {
-                        jQuery('#send-btn').click(false);
+                
                         alert(responseObj.ResponseData);
+                        alert("Email Sent!");
+                        jQuery("#send-btn").attr("disabled", true);
                     }
                 }
             },
