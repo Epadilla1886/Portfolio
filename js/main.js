@@ -108,7 +108,7 @@ jQuery(document).on('ready', function () {
     jQuery('#toggle').on('click', multiClickFunctionStop);
 
     //Include event handler to submit form
-    $('.contact-submit-holder button').on('click', function(){
+    jQuery('.contact-submit-holder button').on('click', function(){
         SendMail();
     });
 
