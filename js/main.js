@@ -441,13 +441,13 @@ var SendMail = function () {
             url: "../php/mail_handler.php",
             data: params,
             success: function (response) {
-                if (response) {
-                    var responseObj = jQuery.parseJSON(response);
-                    if (responseObj.ResponseData)
-                    {
-                        
-                        alert(responseObj.ResponseData);
-                    }
+//                if (response) {
+//                    var responseObj = jQuery.parseJSON(response);
+//                    if (responseObj.ResponseData)
+//                    {
+//                        
+//                        alert(responseObj.ResponseData);
+//                    }
                     jQuery('#send-btn').val('Your Email has been sent!');
                     setTimeout(function(){jQuery('#send-btn').val("SEND");}, 2000);
 //                  jQuery("#send-btn").attr("disabled", false);
