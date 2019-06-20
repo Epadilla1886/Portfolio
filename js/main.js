@@ -425,8 +425,6 @@ function isValidEmailAddress(emailAddress) {
 var SendMail = function () {
     jQuery("#send-btn").attr("disabled", true);
     jQuery('#send-btn').val('Sending Email.....');
-    var emailVal = jQuery('#contact-email').val();
-//    var notAnEmail = jQuery('#contact-email').text('Your email is not in valid format').css('color','red');
     
     if (isValidEmailAddress(emailVal)) {
         var params = {
@@ -487,12 +485,9 @@ var SendMail = function () {
         });
     } else
     {
-        jQuery('#contact-email').val('');
-        jQuery('#contact-email').attr("placeholder",'YOUR EMAIL IS NOT A VALID FORMAT');
-        setTimeout(function(){jQuery('#contact-email').val(emailVal);}, 3000);
+        jQuery('#send-btn').val('YOUR EMAIL IS NOT A VALID FORMAT');
         setTimeout(function(){jQuery('#send-btn').val("SEND");}, 3000);
         setTimeout(function(){jQuery("#send-btn").attr("disabled", false);}, 3000);
-        
     }
 };
 
