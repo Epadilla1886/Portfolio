@@ -427,7 +427,6 @@ var SendMail = function () {
     jQuery('#send-btn').val('Sending Email.....');
     var emailVal = jQuery('#contact-email').val();
     var mesVal = jQuery('#message').val('Message');
-//    var notAnEmail = jQuery('#contact-email').text('Your email is not in valid format').css('color','red');
     
     if (isValidEmailAddress(emailVal)) {
         var params = {
@@ -452,7 +451,7 @@ var SendMail = function () {
                   jQuery('#send-btn').val('Your Email has been sent!');
                   setTimeout(function(){jQuery('#send-btn').val("SEND");}, 3000);
                   setTimeout(function(){jQuery("#send-btn").attr("disabled", false);}, 3000);
-                  setTimeout(function(){jquery('#message').val("");}, 3000);
+                  setTimeout(function(){jQuery('#message').val("");}, 3000);
                }
             },
             error: function (xhr, ajaxOptions, thrownError) {
