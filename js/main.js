@@ -425,6 +425,7 @@ function isValidEmailAddress(emailAddress) {
 var SendMail = function () {
     jQuery("#send-btn").attr("disabled", true);
     jQuery('#send-btn').val('Sending Email.....');
+    var emailVal = jQuery('#contact-email').val();
     
     if (isValidEmailAddress(emailVal)) {
         var params = {
