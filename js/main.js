@@ -478,7 +478,10 @@ var SendMail = function () {
                         error = "Unexpected error, please try again later.";
                 }
                 if (error) {
-                    jQuery('#message').val(error);
+                    jQuery('#send-btn').val(error);
+                    setTimeout(function(){jQuery('#send-btn').val("SEND");}, 3000);
+                    setTimeout(function(){jQuery("#send-btn").attr("disabled", false);}, 3000);
+                    setTimeout(function(){jQuery("#message").val("");}, 3000);
                 }
             }
         });
