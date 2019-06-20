@@ -444,14 +444,17 @@ var SendMail = function () {
                    var responseObj = jQuery.parseJSON(response);
                    if (responseObj.ResponseData)
                    {
-                       
                        alert(responseObj.ResponseData);
                    }
-                  jQuery('#send-btn').val('Your Email has been sent!');
+                //   jQuery('#send-btn').val('Your Email has been sent!');
+                //   setTimeout(function(){jQuery('#send-btn').val("SEND");}, 3000);
+                //   setTimeout(function(){jQuery("#send-btn").attr("disabled", false);}, 3000);
+                // //   setTimeout(function(){jQuery('#message').val("");}, 3000);
+               }
+               jQuery('#send-btn').val('Your Email has been sent!');
                   setTimeout(function(){jQuery('#send-btn').val("SEND");}, 3000);
                   setTimeout(function(){jQuery("#send-btn").attr("disabled", false);}, 3000);
                 //   setTimeout(function(){jQuery('#message').val("");}, 3000);
-               }
             },
             error: function (xhr, ajaxOptions, thrownError) {
                 //xhr.status : 404, 303, 501...
