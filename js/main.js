@@ -451,7 +451,7 @@ var SendMail = function () {
                   jQuery('#send-btn').val('Your Email has been sent!');
                   setTimeout(function(){jQuery('#send-btn').val("SEND");}, 3000);
                   setTimeout(function(){jQuery("#send-btn").attr("disabled", false);}, 3000);
-                  setTimeout(function(){jQuery('#message').val("");}, 3000);
+                //   setTimeout(function(){jQuery('#message').val("");}, 3000);
                }
             },
             error: function (xhr, ajaxOptions, thrownError) {
