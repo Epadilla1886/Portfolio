@@ -489,8 +489,10 @@ var SendMail = function () {
     {
         jQuery('#contact-email').val('');
         jQuery('#contact-email').attr("placeholder",'YOUR EMAIL IS NOT A VALID FORMAT');
-        setTimeout(function(){jQuery('#contact-email').val(emailVal);}, 2000);
-        setTimeout(function(){jQuery("#send-btn").attr("disabled", false);}, 2000);
+        setTimeout(function(){jQuery('#contact-email').val(emailVal);}, 3000);
+        setTimeout(function(){jQuery('#send-btn').val("SEND");}, 3000);
+        setTimeout(function(){jQuery("#send-btn").attr("disabled", false);}, 3000);
+        
     }
 };
 
